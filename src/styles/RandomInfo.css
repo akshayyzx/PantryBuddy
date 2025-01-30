@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+.reduce-waste {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #FFF9F4;
+}
+
+/* Subheading */
+.subheading {
+    color: #f4a261;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Main Heading */
+.heading {
+    font-size: 40px;
+    font-weight: 900;
+    color: #000;
+    margin-bottom: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+/* Description */
+.description {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #555;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* Feature Cards */
+.feature-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    max-width: 300px;
+    font-family: "Inter", sans-serif;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    margin: 15px 0;
+    color: #e08c3d;
+    font-weight: 700;
+}
+
+.feature-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-card ul li {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+
+/* Tablets & Medium Screens */
+@media (max-width: 1024px) {
+    .heading {
+        font-size: 35px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .features {
+        gap: 15px;
+    }
+
+    .feature-card {
+        max-width: 280px;
+        padding: 18px;
+    }
+
+    .feature-card h3 {
+        font-size: 20px;
+    }
+
+    .feature-card ul li {
+        font-size: 13px;
+    }
+}
+
+/* Small Tablets & Large Phones */
+@media (max-width: 768px) {
+    .reduce-waste {
+        padding: 50px 15px;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 14px;
+        max-width: 500px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .feature-card h3 {
+        font-size: 18px;
+    }
+
+    .feature-card ul li {
+        font-size: 12px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .reduce-waste {
+        padding: 40px 10px;
+    }
+
+    .heading {
+        font-size: 26px;
+    }
+
+    .description {
+        font-size: 13px;
+        max-width: 90%;
+    }
+
+    .feature-card {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .feature-card h3 {
+        font-size: 16px;
+    }
+
+    .feature-card ul li {
+        font-size: 12px;
+    }
+}
+
+

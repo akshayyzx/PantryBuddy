@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+.about-section {
+    text-align: center;
+    background-color: #fdf3eb; /* Soft peach background */
+    padding: 60px 20px;
+}
+
+/* Heading */
+.about-heading {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #222;
+    margin-bottom: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+/* Description */
+.about-description {
+    font-size: 1.1rem;
+    color: #2f2f2f;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Cards Container */
+.about-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-family: "Inter", sans-serif;
+}
+
+/* Individual Card */
+.about-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Icon Styling */
+.about-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+/* Card Heading */
+.about-card h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+/* Card Description */
+.about-card p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Responsive Design */
+
+/* Tablets & Medium Screens */
+@media (max-width: 1024px) {
+    .about-heading {
+        font-size: 2.2rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+        max-width: 700px;
+    }
+
+    .about-cards {
+        gap: 30px;
+    }
+
+    .about-card {
+        width: 280px;
+        padding: 25px;
+    }
+
+    .about-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .about-card p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Small Tablets & Large Phones */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 50px 15px;
+    }
+
+    .about-heading {
+        font-size: 2rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+        max-width: 600px;
+    }
+
+    .about-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-card {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .about-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .about-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .about-section {
+        padding: 40px 10px;
+    }
+
+    .about-heading {
+        font-size: 1.8rem;
+    }
+
+    .about-description {
+        font-size: 0.95rem;
+        max-width: 90%;
+    }
+
+    .about-card {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .about-card h3 {
+        font-size: 1rem;
+    }
+
+    .about-card p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 360px) {
+    .about-heading {
+        font-size: 1.6rem;
+    }
+
+    .about-description {
+        font-size: 0.9rem;
+    }
+
+    .about-card h3 {
+        font-size: 0.95rem;
+    }
+
+    .about-card p {
+        font-size: 0.8rem;
+    }
+}

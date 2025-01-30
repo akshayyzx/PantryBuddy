@@ -1,0 +1,107 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 60px;
+  background-color: #0f3d4c;
+  color: #fdf3eb;
+  font-family: Arial, sans-serif;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 15px;
+  min-width: 200px; /* Ensures sections don’t get too small */
+}
+
+.logo-section {
+  text-align: left;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fdf3eb;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #fdf3eb;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+  color: #ffcc33; /* Light yellow for visibility */
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 1024px) {
+  .footer {
+      flex-direction: column; /* Stacks items vertically */
+      align-items: center;
+      text-align: center;
+      padding: 30px 20px;
+  }
+
+  .footer-section {
+      margin-bottom: 20px; /* Adds spacing between stacked items */
+  }
+
+  .logo {
+      width: 60px; /* Slightly smaller on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+      padding: 20px;
+  }
+
+  .logo {
+      width: 50px; /* Further reduction for small screens */
+  }
+
+  .footer-section h4 {
+      font-size: 14px;
+  }
+
+  .footer-section a {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+      padding: 15px;
+  }
+
+  .logo {
+      width: 40px;
+  }
+
+  .footer-section h4 {
+      font-size: 13px;
+  }
+
+  .footer-section a {
+      font-size: 13px;
+  }
+}
